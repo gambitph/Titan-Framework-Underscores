@@ -1,0 +1,28 @@
+/*	Hide the other stuff and make the form plain */
+.generator-form-secondary {
+	display: none;
+}
+
+#underscoresme-name {
+	display: inline-block;
+	max-width: 200px;
+}
+label[for="underscoresme-name"] {
+	display: inline-block;
+}
+.generator-form-inputs {
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+}
+.generator-form-submit {
+	display: inline-block;
+	vertical-align: top;
+}
+.generator-form-version {
+	display: block;
+	font-size: 10px;
+}
+#generator-form {
+	text-align: center;
+}
