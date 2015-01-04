@@ -62,7 +62,7 @@ function underscores_init() {
 	if ( ! isset( $_REQUEST['underscoresme_generate'], $_REQUEST['underscoresme_name'] ) )
 		return;
 	
-	$_REQUEST['underscoresme_description'] = 'An _s based theme with Titan Framework integration, generated from http://titanframework.net';
+	$_REQUEST['underscoresme_description'] = 'An Underscores based theme with Titan Framework integration, generated from http://titanframework.net';
 }
 	
 
