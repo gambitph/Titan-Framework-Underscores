@@ -11,3 +11,13 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+
+composer.lock
+
+composer.phar
+
+prototype/codesniffer.ruleset.xml
+
+prototype/CONTRIBUTING.md
+*/sass/
+vendor/

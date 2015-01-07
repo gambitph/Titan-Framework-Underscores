@@ -1,0 +1,87 @@
+{
+	"name": "gambitph/titan-framework-underscores",
+	"description": "Generates a _s theme that includes Titan Framework. Based on Automattic's Underscores.me",
+	"keywords": ["wordpress", "titan", "framework", "options", "titan framework", "Titan Framework", "underscores"],
+	"homepage" : "https://github.com/gambitph/Titan-Framework-Underscores",
+	"license": "GPLv2+",
+	"authors": [
+		{
+			"name": "Gambit Technologies",
+			"email" : "info@gambit.ph",
+			"homepage" : "http://www.titanframework.net/",
+			"role" : "Developer"
+		}
+	],
+	"type": "library",
+	"autoload": {
+		"files": ["plugin.php"]
+	},
+	"archive": {
+		"exclude": [
+			"/bin", 
+			"/vendor", 
+			"/tests",
+			"*/composer.*",
+			"*/.*", 
+			"*.dist",
+			"*.md",
+			"*.codekit",
+			"*.rb"
+		]
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "automattic/underscores.me",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/Automattic/underscores.me",
+					"type": "git",
+					"reference": "origin/master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "gambitph/titan-framework",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/gambitph/Titan-Framework",
+					"type": "git",
+					"reference": "origin/master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "automattic/_s",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/automattic/_s",
+					"type": "git",
+					"reference": "origin/master"
+				}
+			}
+		}
+	],
+	"require": {
+		"automattic/underscores.me": "dev-master",
+		"gambitph/titan-framework": "dev-master",
+		"automattic/_s": "dev-master"
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"php -r \"copy('vendor/automattic/underscores.me/plugins/underscoresme-generator/underscoresme-generator.php', 'underscoresme-generator.php');\"",
+			
+			"php -r \"@mkdir('prototype/');\"",
+			
+			"php -r \"copy('vendor/gambitph/titan-framework/titan-framework-checker.php', 'prototype/titan-framework-checker.php');\"",
+			"php -r \"copy('titan-options.php', 'prototype/titan-options.php');\"",
+			
+			"cp -r vendor/automattic/_s/* prototype"
+		]
+	}
+}

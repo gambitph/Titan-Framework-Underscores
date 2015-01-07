@@ -1,6 +1,7 @@
 <?php
 /**
- * From: https://github.com/Automattic/underscores.me/blob/master/plugins/underscoresme-generator/underscoresme-generator.php
+ * Plugin Name: Underscores.me Generator
+ * Description: Generates themes based on the _s theme.
  */
 
 class Underscores_Generator_Plugin {
