@@ -68,9 +68,9 @@
 		}
 	],
 	"require": {
-		"automattic/underscores.me": "dev-master",
-		"gambitph/titan-framework": "dev-master",
-		"automattic/_s": "dev-master"
+		"automattic/underscores.me": "@dev",
+		"gambitph/titan-framework": "@dev",
+		"automattic/_s": "@dev"
 	},
 	"scripts": {
 		"post-update-cmd": [

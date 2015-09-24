@@ -3,7 +3,7 @@
 Plugin Name: Titan Theme Generator
 Description: Generates a _s theme that includes Titan Framework. Based on Automattic's Underscores.me
 Author: Benjamin Intal
-Version: 0.1
+Version: 0.2
 Author URI: http://gambit.ph
 */
 
